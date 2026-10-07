@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="negro">#FF000000</color>
+    <color name="placeholder">#80262626</color>
+
+    <color name="verde_oscuro">#3A5A40</color>
+    <color name="verde_claro">#A3B18A</color>
+    <color name="verde_texto">#344E41</color>
+
+    <color name="blanco">#FFFFFFFF</color>
+    <color name="gris_claro">#F4F4F4</color>
+    <color name="boton_texto">#DAD7CD</color>
+</resources>
