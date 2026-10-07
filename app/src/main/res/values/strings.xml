@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Trellox</string>
+    <string name="titulo_bienvenida">Bienvenidos a Trellox</string>
+    <string name="boton_iniciar">Iniciar Sesión</string>
 </resources>
