@@ -5,6 +5,7 @@
     android:id="@+id/login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:autofillHints="username"
     android:background="@color/verde_claro">
 
     <TextView
@@ -19,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.058" />
+        app:layout_constraintVertical_bias="0.061" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -28,43 +29,105 @@
         android:contentDescription="@string/img_perfil"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.278"
+        app:layout_constraintVertical_bias="0.21"
         app:srcCompat="@drawable/img_usuario" />
 
     <EditText
         android:id="@+id/inputUsuario"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
+        android:autofillHints="@string/usuario"
         android:backgroundTint="@color/verde_oscuro"
         android:ems="10"
         android:fontFamily="@font/amaranth"
         android:inputType="text"
         android:text="@string/usuario"
-        android:textColor="@color/placeholder"
+        android:textColor="@color/verde_texto"
         android:textColorLink="@color/verde_oscuro"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="452dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544"
         tools:text="@string/usuario" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="550dp">
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:hint="hint"
+    <EditText
+        android:id="@+id/inputContra"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:autofillHints="@string/contra"
+        android:backgroundTint="@color/verde_oscuro"
+        android:ems="10"
+        android:fontFamily="@font/amaranth"
+        android:inputType="textPassword"
+        android:text="@string/contra"
+        android:textColor="@color/verde_oscuro"
+        android:textColorLink="@color/verde_oscuro"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.778"
-        tools:layout_editor_absoluteX="81dp" />
+        app:layout_constraintVertical_bias="0.645"
+        tools:text="@string/contra" />
+
+    <Button
+        android:id="@+id/botonLogin"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/verde_oscuro"
+        android:fontFamily="@font/amaranth"
+        android:onClick="login"
+        android:text="@string/iniciar"
+        android:textColor="@color/gris_claro"
+        android:textColorLink="@color/verde_oscuro"
+        android:textSize="20sp"
+        app:cornerRadius="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.889" />
+
+    <TextView
+        android:id="@+id/contraOlvidada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amaranth"
+        android:text="@string/contra_olvidada"
+        android:textColor="@color/verde_texto"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.698"
+        tools:text="@string/contra_olvidada" />
+
+    <Button
+        android:id="@+id/botonRegistro"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/verde_oscuro"
+        android:fontFamily="@font/amaranth"
+        android:text="@string/registro"
+        android:textColor="@color/gris_claro"
+        android:textColorLink="@color/verde_oscuro"
+        android:textSize="20sp"
+        app:cornerRadius="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.889" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
