@@ -8,6 +8,7 @@
     <!-- Pantalla de Login  -->
     <string name="usuario">Usuario</string>
     <string name="contra">Contraseña</string>
+    <string name="contraPlaceholder">********</string>
     <string name="contra_olvidada"> ¿Has olvidado tu contraseña?</string>
     <string name="iniciar">Iniciar</string>
     <string name="registro">Registro</string>
@@ -18,5 +19,12 @@
    <string name="calendario">calendario </string>
    <string name="tarea">Crear tarea </string>
    <string name="ver">Ver tarea </string>
+
+    <!-- Pantalla Mostrar lista -->
+    <string name="lista_tareas">Lista de tareas  </string>
+    <string name="volver"> ⬅️​ </string>
+
+    <!-- Pantalla de crear tarea-->
+    <string name="msgTarea">ejemplo: Comprar teclado.... </string>
 
 </resources>

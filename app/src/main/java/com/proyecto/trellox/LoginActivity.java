@@ -47,10 +47,10 @@ public class LoginActivity extends AppCompatActivity {
     private boolean validarUsuario(String usuario, String password){
         SQLiteDatabase db = helperbd.getReadableDatabase();
 
-        String[] projection = {Estructura_BD.COLUMNA_USUARIO_ID};
+        String[] projection = {Estructura_BD.USUARIO_ID};
 
-        String selection = Estructura_BD.COLUMNA_USUARIO_NOMBRE   + " = ? AND " +
-                           Estructura_BD.COLUMNA_USUARIO_PASSWORD + " = ? ";
+        String selection = Estructura_BD.USUARIO_NOMBRE   + " = ? AND " +
+                           Estructura_BD.USUARIO_PASSWORD + " = ? ";
 
         String[] selectionArgs = {usuario, password};
 
@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
 
         try {
             Cursor cursor = db.query(
-              Estructura_BD.NOMBRE_TABLA_USUARIOS,
+              Estructura_BD.TABLA_USUARIOS,
               projection,
               selection,
               selectionArgs,

@@ -24,6 +24,8 @@
 
         <activity android:name=".LoginActivity" />
         <activity android:name=".PrincipalActivity" />
+        <activity android:name=".MostrarTareasActivity" />
+        <activity android:name=".CrearTareasActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

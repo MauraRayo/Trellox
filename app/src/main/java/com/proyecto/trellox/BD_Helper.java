@@ -20,9 +20,9 @@ public class BD_Helper extends SQLiteOpenHelper {
         db.execSQL(Estructura_BD.SQL_CREATE_TAREAS);
 
         ContentValues values = new ContentValues();
-        values.put(Estructura_BD.COLUMNA_USUARIO_NOMBRE, "Mau");
-        values.put(Estructura_BD.COLUMNA_USUARIO_PASSWORD, "1234");
-        db.insert(Estructura_BD.NOMBRE_TABLA_USUARIOS, null, values);
+        values.put(Estructura_BD.USUARIO_NOMBRE, "Mau");
+        values.put(Estructura_BD.USUARIO_PASSWORD, "1234");
+        db.insert(Estructura_BD.TABLA_USUARIOS, null, values);
     }
 
     @Override

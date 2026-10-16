@@ -1,4 +1,14 @@
 package com.proyecto.trellox;
 
-public class MostrarTareasActivity {
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MostrarTareasActivity extends AppCompatActivity {
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.mostrar_tareas);
+    }
 }
