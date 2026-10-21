@@ -12,12 +12,12 @@
         android:id="@+id/logo"
         android:layout_width="146dp"
         android:layout_height="136dp"
-        android:layout_marginStart="112dp"
         android:contentDescription="@string/img_logo"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.253"
+        app:layout_constraintVertical_bias="0.247"
         app:srcCompat="@drawable/lista" />
 
     <Button

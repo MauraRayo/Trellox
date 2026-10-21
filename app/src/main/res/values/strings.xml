@@ -16,6 +16,7 @@
 
    <!--Pantalla Principal -->
    <string name="msg">Bienvenido, </string>
+   <string name="bienvenido_usuario">Bienvenido, %s</string>
    <string name="calendario">calendario </string>
    <string name="tarea">Crear tarea </string>
    <string name="ver">Ver tarea </string>

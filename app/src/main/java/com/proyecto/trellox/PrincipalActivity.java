@@ -2,12 +2,10 @@ package com.proyecto.trellox;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.Toast;
+import android.widget.CalendarView;
+import android.widget.TextView;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class PrincipalActivity extends AppCompatActivity {
@@ -16,6 +14,12 @@ public class PrincipalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.principal);
+
+        TextView bienvenidaPrincipal = findViewById(R.id.bienvenidaPrincipal);
+        String usuario = getIntent().getStringExtra("NOMBRE_USUARIO");
+        if (usuario != null && !usuario.isEmpty()) {
+            bienvenidaPrincipal.setText(getString(R.string.bienvenido_usuario, usuario));
+        }
     }
 
     public void mostrarTarea(View view ){
@@ -23,7 +27,8 @@ public class PrincipalActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void crearTareaModal(View view) {
-        Toast.makeText(PrincipalActivity.this, "¡Boton de crear areas!", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, CrearTareasActivity.class);
+        startActivity(intent);
     }
 
 

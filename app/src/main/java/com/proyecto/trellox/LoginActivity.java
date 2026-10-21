@@ -30,8 +30,11 @@ public class LoginActivity extends AppCompatActivity {
         String usuario  = inputUsuario.getText().toString().trim();
         String password = inputPassword.getText().toString().trim();
 
-        if(usuario.isEmpty() || password.isEmpty()){
-            Toast.makeText(this, "Introduce tu usuario y contraseña", Toast.LENGTH_SHORT).show();
+        if(usuario.isEmpty()){
+            Toast.makeText(this, "Introduce tu usuario", Toast.LENGTH_SHORT).show();
+            return;
+        }else if(password.isEmpty()){
+            Toast.makeText(this, "Introduce tu contraseña", Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -65,12 +68,10 @@ public class LoginActivity extends AppCompatActivity {
               null, null, null
             );
 
-            if (cursor != null) {
-                if (cursor.getCount() > 0) {
-                    existe = true;
-                }
-                cursor.close();
+            if (cursor.getCount() > 0) {
+                existe = true;
             }
+            cursor.close();
         }catch (Exception e){
             Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
         }

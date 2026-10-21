@@ -8,7 +8,7 @@
     android:background="@color/verde_claro">
 
     <ImageView
-        android:id="@+id/imagePrincipal"
+        android:id="@+id/imgLogo"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:contentDescription="@string/img_logo"
@@ -17,17 +17,17 @@
         app:layout_constraintHorizontal_bias="0.023"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"
+        app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@drawable/lista" />
 
     <TextView
-        android:id="@+id/tituloLogo"
+        android:id="@+id/nombreApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/amaranth_bold"
         android:text="@string/app_name"
         android:textColor="@color/verde_oscuro"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.15"
@@ -39,8 +39,8 @@
         android:id="@+id/calendarView"
         android:layout_width="380dp"
         android:layout_height="370dp"
-        android:background="@color/boton_texto"
-        android:focusedMonthDateColor="@color/boton_texto"
+        android:background="@color/gris_claro"
+        android:focusedMonthDateColor="@color/gris_claro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.483"
@@ -55,7 +55,7 @@
         android:fontFamily="@font/amaranth_bold"
         android:text="@string/msg"
         android:textColor="@color/verde_oscuro"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.841"
