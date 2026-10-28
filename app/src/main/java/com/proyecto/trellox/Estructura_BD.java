@@ -27,7 +27,7 @@ public class Estructura_BD {
     public static final String SQL_CREATE_TAREAS =
             "CREATE TABLE " + Estructura_BD.TABLA_TAREAS + " (" +
                     Estructura_BD.TAREA_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
-                    Estructura_BD.TAREA_TITULO + " TEXT," +
+                    Estructura_BD.TAREA_TITULO + "TEXT, 128" +
                     Estructura_BD.TAREA_FECHA + " TEXT)";
 
     public static final String SQL_DELETE_TAREAS =

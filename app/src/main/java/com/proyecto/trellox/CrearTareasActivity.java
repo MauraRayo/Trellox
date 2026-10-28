@@ -32,8 +32,8 @@ public class CrearTareasActivity extends AppCompatActivity {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
         fechaSeleccionada = sdf.format(calendar.getTime());
 
-        calendarioCT.setOnDateChangeListener((view, dayOfMonth, month, year) -> {
-            fechaSeleccionada = (month + 1) + "/" + dayOfMonth + "/" + year;
+        calendarioCT.setOnDateChangeListener((view,dayOfMonth, month,year) -> {
+            fechaSeleccionada =  dayOfMonth + "/" + (month + 1) + "/" + year;
         });
     }
 
@@ -49,8 +49,9 @@ public class CrearTareasActivity extends AppCompatActivity {
         values.put(Estructura_BD.TAREA_TITULO, titulo);
         values.put(Estructura_BD.TAREA_FECHA, fechaSeleccionada);
 
-        long newRowId = db.insert(Estructura_BD.TABLA_TAREAS, null, values);
-        if (newRowId != -1) {
+
+        long insertar = db.insert(Estructura_BD.TABLA_TAREAS, null, values);
+        if (insertar != -1) {
             Toast.makeText(this, "Tarea guardada correctamente", Toast.LENGTH_SHORT).show();
             finish();
         } else {
