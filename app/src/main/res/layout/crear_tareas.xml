@@ -63,16 +63,38 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.358" />
 
-    <TextView
+    <EditText
         android:id="@+id/inputTarea"
         android:layout_width="377dp"
-        android:layout_height="112dp"
+        android:layout_height="80dp"
+        android:background="@color/gris_claro"
         android:fontFamily="@font/amaranth"
+        android:gravity="top"
         android:hint="@string/msgTarea"
-        android:inputType="textAutoCorrect"
+        android:inputType="textMultiLine|textAutoCorrect"
+        android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.848" />
+        app:layout_constraintVertical_bias="0.795" />
+
+    <Button
+        android:id="@+id/btnGuardarTarea"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/verde_oscuro"
+        android:fontFamily="@font/amaranth"
+        android:onClick="guardarTarea"
+        android:text="Guardar"
+        android:textColor="@color/blanco"
+        android:textSize="16sp"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92" />
 </androidx.constraintlayout.widget.ConstraintLayout>
