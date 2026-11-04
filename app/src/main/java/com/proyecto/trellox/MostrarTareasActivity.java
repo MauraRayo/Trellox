@@ -38,7 +38,7 @@ public class MostrarTareasActivity extends AppCompatActivity {
             while (cursor.moveToNext()) {
                 String titulo = cursor.getString(cursor.getColumnIndexOrThrow(Estructura_BD.TAREA_TITULO));
                 String fecha = cursor.getString(cursor.getColumnIndexOrThrow(Estructura_BD.TAREA_FECHA));
-                listaTareas.add(titulo + " -> " + fecha );
+                listaTareas.add(fecha + " -> " + titulo );
             }
         } catch (Exception e) {
             // Ignored or logged

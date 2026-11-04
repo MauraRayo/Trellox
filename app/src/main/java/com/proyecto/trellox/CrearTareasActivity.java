@@ -33,14 +33,14 @@ public class CrearTareasActivity extends AppCompatActivity {
         fechaSeleccionada = sdf.format(calendar.getTime());
 
         calendarioCT.setOnDateChangeListener((view,dayOfMonth, month,year) -> {
-            fechaSeleccionada =  dayOfMonth + "/" + (month + 1) + "/" + year;
+            fechaSeleccionada =  dayOfMonth + "/" + (month) + "/" + year;
         });
     }
 
     public void guardarTarea(View view) {
         String titulo = inputTarea.getText().toString().trim();
         if (titulo.isEmpty()) {
-            Toast.makeText(this, "Introduce un título para la tarea", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Descripción de la tarea", Toast.LENGTH_SHORT).show();
             return;
         }
 
