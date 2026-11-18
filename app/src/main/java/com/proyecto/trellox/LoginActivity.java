@@ -10,8 +10,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.Locale;
-
 public class LoginActivity extends AppCompatActivity {
 
     private EditText inputUsuario;
@@ -29,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
        helperbd = new BD_Helper(this);
     }
     public void login(View view) {
-        String usuario  = inputUsuario.getText().toString().trim().toLowerCase();
+        String usuario  = inputUsuario.getText().toString().trim();
         String password = inputPassword.getText().toString().trim();
 
 

@@ -33,7 +33,7 @@ public class CrearTareasActivity extends AppCompatActivity {
         fechaSeleccionada = sdf.format(calendar.getTime());
 
         calendarioCT.setOnDateChangeListener((view,dayOfMonth, month,year) -> {
-            fechaSeleccionada =  dayOfMonth + "//" + (month) + "/" + year;
+            fechaSeleccionada =  dayOfMonth  + (month) + "/" + year;
         });
     }
 
