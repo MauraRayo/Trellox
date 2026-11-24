@@ -6,6 +6,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,7 +55,7 @@ public class MostrarTareasActivity extends AppCompatActivity {
                 listaDeTareas.add(new TareaItem(id, titulo, fecha));
             }
         } catch (Exception e) {
-            // Ignored or logged
+            Log.e("ERROR", "Error al obtener tareas", e);
         }
 
         TareaAdapter adapter = new TareaAdapter(this, listaDeTareas, helperbd);
